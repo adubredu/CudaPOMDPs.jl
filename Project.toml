@@ -1,0 +1,13 @@
+name = "CudaPOMDPs"
+uuid = "5662414c-5f74-4fec-8d63-2a827117fdce"
+authors = ["Alphonsus Adu-Bredu"]
+version = "0.1.0"
+
+[compat]
+julia = "1"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test"]
