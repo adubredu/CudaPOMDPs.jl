@@ -10,7 +10,7 @@ Abstract base type for a partially observable Markov decision process that run o
 """
 
 
-abstract type CudaPOMDP{S, A, O} <: POMDP{S, A, 0} end 
+abstract type CudaPOMDP{S, A, O} <: POMDP{S, A, O} end 
 
 export CudaPOMDP
 
