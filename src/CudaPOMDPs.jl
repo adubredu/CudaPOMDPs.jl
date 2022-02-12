@@ -7,7 +7,7 @@ Abstract base type for a partially observable Markov decision process that run o
     A: action type
     O: observation type
 """
-abstract type CudaPOMDP{S, A, O} end 
+abstract type CudaPOMDP{S, A, O} <: POMDP end 
 
 export CudaPOMDP
 
