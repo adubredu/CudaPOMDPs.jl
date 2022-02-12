@@ -1,5 +1,6 @@
 module CudaPOMDPs
 
+using POMDPs
 """
     CudaPOMDP{S,A,O}
 Abstract base type for a partially observable Markov decision process that run on GPUs.
@@ -7,9 +8,9 @@ Abstract base type for a partially observable Markov decision process that run o
     A: action type
     O: observation type
 """
-using POMDPs
 
-abstract type CudaPOMDP{S, A, O} <: POMDP end 
+
+abstract type CudaPOMDP{S, A, O} <: POMDP{S, A, 0} end 
 
 export CudaPOMDP
 
